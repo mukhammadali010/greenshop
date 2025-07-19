@@ -29,7 +29,6 @@ export const Header = () => {
           <a href="#">Plant Care</a>
           <a href="#">Blogs</a>
         </nav>
-
         <div className='flex gap-5 items-center'>
           <SearchOutlined />
           <ShoppingCartOutlined />
@@ -93,5 +92,4 @@ export const Header = () => {
     </header>
   );
 };
-
 
