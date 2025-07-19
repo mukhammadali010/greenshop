@@ -68,7 +68,7 @@ export const Header = () => {
                 />
               </div>
               
-              <a href="#" className="text-[#46A358] text-sm self-end mb-6 hover:underline">Forgot Password?</a>
+              <a href="#" className="text-[#46A358]">Forgot Password?</a>
               
               <Button 
                 className="!bg-[#46A358] !w-full !h-12 !rounded-lg !text-white !font-semibold mb-6 hover:!bg-[#3d8a4a] transition-colors" 
