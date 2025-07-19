@@ -2,8 +2,7 @@ import './App.css'
 import { Button, Input, Modal } from 'antd'
 import { Header } from './Components/Header'
 import CarouselComponent from './Components/Carousel'
-import { Footer } from './Components/Footer'
-
+import { Category } from './Components/Category'
 
 function App() {
 
@@ -13,7 +12,8 @@ function App() {
     <>
      <Header/>
      <CarouselComponent/>
-     <Footer/>
+     <Flowers/>
+     <Category/>
     </>
   )
 }
