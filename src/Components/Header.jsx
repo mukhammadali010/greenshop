@@ -21,7 +21,7 @@ export const Header = () => {
   };
   
   return (
-    <header className='py-6'>
+    <header className='py-6 sticky top-0 bg-white'>
       <div className='container flex items-center justify-between mx-auto'>
         <img src={logo} alt="Logo" />
 
