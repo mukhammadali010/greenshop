@@ -1,7 +1,7 @@
 import React from 'react'
 import img2 from '../assets/img2.png'
 import img3 from '../assets/img3.png'
-import logo from '../assets/logo.png'
+import logo from '../assets/logo1.png'
 import img4 from '../assets/img4.png'
 import { FacebookOutlined, InstagramOutlined, LinkedinOutlined, TwitterOutlined, YoutubeOutlined } from '@ant-design/icons'
 

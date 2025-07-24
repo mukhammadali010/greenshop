@@ -15,7 +15,7 @@ export const RoutesComponent = () => {
                 <Route path='shop' Component={Shop}/>
                 <Route path='plant' Component={Plant}/>
                 <Route path='blog' Component={Blogs}/>
-                <Route path='product' Component={Product}/>
+                <Route path='checkout' Component={Product}/>
             </Routes>
         </BrowserRouter>
     </div>
