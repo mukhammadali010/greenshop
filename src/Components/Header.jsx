@@ -47,7 +47,7 @@ export const Header = () => {
             </div>
             <input
               type="text"
-              placeholder="com"
+              placeholder="/com"
               style={{
                 width: '100%',
                 padding: 10,
