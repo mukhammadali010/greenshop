@@ -11,7 +11,7 @@ const contentStyle = {
 const CarouselComponent = () => (
 
   <div className='container mx-auto'>
-    <Carousel autoplay>
+    <Carousel autoplay>  
       <div className='!flex !items-center !justify-between' >
         <div className=' w-1/2'>
           <h1>Let’s Make a
