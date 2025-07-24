@@ -9,29 +9,50 @@ const contentStyle = {
   background: '#eee',
 };
 const CarouselComponent = () => (
-    
+
   <div className='container mx-auto'>
     <Carousel autoplay>
-    <div className='!flex !items-center !justify-between' >
+      <div className='!flex !items-center !justify-between' >
         <div className=' w-1/2'>
-            <h1 className='text-8xl'>Let’s Make a
-Better <span className='text-emerald-600'>Planet</span></h1>
-    <p>We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to create an unique Urban Jungle. Order your favorite plants!</p>
-    <Button className='!bg-[#46A358]' type="primary ">Primary Button</Button>
+          <h1>Let’s Make a
+            Better Planet</h1>
+          <p>We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to create an unique Urban Jungle. Order your favorite plants!</p>
+          <Button className='!bg-[#46A358]' type="primary">Primary Button</Button>
         </div>
         <img src={img1} alt="" />
 
-    </div>
-    <div>
-      <h3 style={contentStyle}>2</h3>
-    </div>
-    <div>
-      <h3 style={contentStyle}>3</h3>
-    </div>
-    <div>
-      <h3 style={contentStyle}>4</h3>
-    </div>
-  </Carousel>
+      </div>
+      <div className='!flex !items-center !justify-between'>
+        <div className=' w-1/2'>
+          <h1>Let’s Make a
+            Better Planet</h1>
+          <p>We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to create an unique Urban Jungle. Order your favorite plants!</p>
+          <Button className='!bg-[#46A358]' type="primary">Primary Button</Button>
+        </div>
+        <img src={img1} alt="" />
+
+      </div>
+      <div className='!flex !items-center !justify-between'>
+        <div className=' w-1/2'>
+          <h1>Let’s Make a
+            Better Planet</h1>
+          <p>We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to create an unique Urban Jungle. Order your favorite plants!</p>
+          <Button className='!bg-[#46A358]' type="primary">Primary Button</Button>
+        </div>
+        <img src={img1} alt="" />
+
+      </div>
+      <div className='!flex !items-center !justify-between'>
+        <div className=' w-1/2'>
+          <h1>Let’s Make a
+            Better Planet</h1>
+          <p>We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to create an unique Urban Jungle. Order your favorite plants!</p>
+          <Button className='!bg-[#46A358]' type="primary">Primary Button</Button>
+        </div>
+        <img src={img1} alt="" />
+
+      </div>
+    </Carousel>
   </div>
 );
 export default CarouselComponent;
