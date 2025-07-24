@@ -7,7 +7,7 @@ import { FacebookOutlined, InstagramOutlined, LinkedinOutlined, TwitterOutlined,
 
 export const Footer = () => {
     return (
-        <div className='max-w-screen-xl mx-auto py-8'>
+        <div className='container mx-auto py-8'>
             <div className='flex bg-[#FBFBFB] items-center justify-between p-8'>
                 <div>
                     <img src={img2} alt="" />

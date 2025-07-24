@@ -43,7 +43,7 @@ export const Category = () => {
       ];
       
   return (
-    <div className="container gap-38 p-[60px] flex items-center justify-between">
+    <div className="container mx-auto gap-38 p-[60px] flex items-center justify-between">
       <div>
         <div className="w-[310px] h-[974px] bg-[#FBFBFB] p-5">
         <h1 className='text-2xl font-bold'>Category</h1>
