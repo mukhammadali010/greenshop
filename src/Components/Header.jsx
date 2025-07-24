@@ -1,106 +1,97 @@
-import React, { useState } from 'react'
-import logo from '../assets/logo.png'
-import { SearchOutlined, ShoppingCartOutlined } from '@ant-design/icons'
-import { Button, Modal } from 'antd'
-export const Header = () => {
+import React, { useState } from 'react';
+import logo from '../assets/logo.png';
+import { SearchOutlined, ShoppingCartOutlined } from '@ant-design/icons';
+import { Button, Modal } from 'antd';
+import { NavLink } from 'react-router-dom';
 
+export const Header = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+
   const showModal = () => {
     setIsModalOpen(true);
   };
+
   const handleOk = () => {
     setIsModalOpen(false);
   };
+
   const handleCancel = () => {
+    
     setIsModalOpen(false);
   };
+  
   return (
-    <header className='py-6'>
+    <header className='py-6 sticky top-0 bg-white'>
       <div className='container flex items-center justify-between mx-auto'>
-        <img src={logo} alt="" />
+        <img src={logo} alt="Logo" />
+
         <nav className='flex gap-4'>
-          <a href="#">Home</a>
-          <a href="#">Shop</a>
-          <a href="#">Plant Care</a>
-          <a href="#">Blogs</a>
+          <a href="home">Home</a>
+          <a href='shop'>Shop</a>
+          <a href="plant">Plant Care</a>
+          <a href="blog">Blogs</a>
         </nav>
-        <div className='flex gap-5'>
+        <div className='flex gap-5 items-center'>
           <SearchOutlined />
           <ShoppingCartOutlined />
-          <Button className='!bg-[#46A358]' type="primary" onClick={showModal}>Login</Button>
+          <Button
+            className='!bg-[#46A358]'
+            type="primary"
+            onClick={showModal}
+          >
+            Login
+          </Button>
+
           <Modal
-            title={null}
+            className='flex items-center justify-center'
+            title="Login"
             open={isModalOpen}
             onOk={handleOk}
             onCancel={handleCancel}
-            footer={null}
-            width={400}
-            centered
+            closable={true}
           >
-            <div style={{ textAlign: 'center', marginBottom: 24 }}>
-              <span style={{ color: '#46A358', fontWeight: 600, fontSize: 28 }}>Login</span>
-              <span style={{ margin: '0 8px', color: '#000', fontWeight: 400, fontSize: 28 }}>|</span>
-              <span style={{ color: '#3D3D3D', fontWeight: 400, fontSize: 28 }}>Register</span>
+            <div className="bg-white p-6 rounded-lg shadow-md w-[400px]">
+              <h3 className="text-2xl font-semibold text-center mb-2">
+                <span className="text-[#46A358]">Login</span> Register
+              </h3>
+              <p className="text-sm text-center text-gray-600 mb-4">
+                Enter your username and password to login.
+              </p>
+
+              <div className="flex flex-col space-y-3">
+                <input
+                  className="w-full h-10 px-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#46A358]"
+                  type="text"
+                  placeholder="almamun_uxui@outlook.com"
+                />
+                <input
+                  className="w-full h-10 px-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#46A358]"
+                  type="password"
+                  placeholder="Enter password"
+                />
+              </div>
+
+              <button className="mt-4 w-full bg-[#46A358] text-white py-2 rounded-md hover:bg-green-600 transition">
+                Login
+              </button>
+
+              <p className="text-center text-sm text-gray-500 my-3">Or login with</p>
+
+              <div className="flex flex-col space-y-2">
+                <button className="w-full border border-gray-300 py-2 rounded-md hover:bg-gray-100 transition">
+                  Login with Google
+                </button>
+                <button className="w-full border border-gray-300 py-2 rounded-md hover:bg-gray-100 transition">
+                  Login with Facebook
+                </button>
+              </div>
             </div>
-            <div style={{ marginBottom: 16, color: '#3D3D3D' }}>
-              Enter your username and password to login.
-            </div>
-            <input
-              type="text"
-              placeholder="/com"
-              style={{
-                width: '100%',
-                padding: 10,
-                marginBottom: 12,
-                borderRadius: 6,
-                border: '1px solid #EAEAEA',
-                background: '#F9F9F9'
-              }}
-            />
-            <input
-              type="password"
-              placeholder="Password"
-              style={{
-                width: '100%',
-                padding: 10,
-                marginBottom: 8,
-                borderRadius: 6,
-                border: '1px solid #EAEAEA',
-                background: '#F9F9F9'
-              }}
-            />
-            <div style={{ textAlign: 'right', marginBottom: 16 }}>
-              <a href="#" style={{ color: '#46A358', textDecoration: 'none' }}>Forgot Password?</a>
-            </div>
-            <Button
-              type="primary"
-              style={{
-                width: '100%',
-                background: '#46A358',
-                borderColor: '#46A358',
-                height: 40,
-                marginBottom: 16
-              }}
-            >
-              Login
-            </Button>
-            <div style={{ textAlign: 'center', margin: '16px 0', color: '#A5A5A5' }}>
-              Or login with
-            </div>
-            <Button
-              style={{
-                width: '100%',
-                background: '#fff',
-                borderColor: '#EAEAEA',
-                color: '#727272',
-                height: 40
-              }}
-            >
-              Login with Google
-            </Button>
+
+
           </Modal>
         </div>
       </div>
     </header>
-  )
-}
+  );
+};
+
