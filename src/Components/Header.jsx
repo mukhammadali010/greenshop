@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from '../assets/logo.png';
+import logo from '../assets/logo1.png';
 import { SearchOutlined, ShoppingCartOutlined } from '@ant-design/icons';
 import { Button, Modal } from 'antd';
 import { NavLink } from 'react-router-dom';
